@@ -25,7 +25,7 @@ export function UpdateInvoice({ id }: { id: string }) {
 }
 
 
-import deleteInvoice from '@/app/lib/actions '
+import { deleteInvoice } from '@/app/lib/actions'
 
 export function DeleteInvoice({ id }: { id: string }) {
   const deleteInvoiceWithId = deleteInvoice.bind(null, id)
